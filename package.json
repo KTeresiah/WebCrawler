@@ -1,0 +1,23 @@
+{
+  "name": "webcrawler",
+  "version": "1.0.0",
+  "description": "Webcrawler project from Freecodecamp's Full HTTP Networking Course - Fetch and REST APIs in Javascript published January 30, 2023.  Link: https://www.youtube.com/watch?v=2JYT5f2isg4&t=13790s&ab_channel=freeCodeCamp.org",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/KTeresiah/WebCrawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KTeresiah/WebCrawler/issues"
+  },
+  "homepage": "https://github.com/KTeresiah/WebCrawler#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
