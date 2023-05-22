@@ -1,4 +1,6 @@
 const {crawlPage} = require('./crawl.js')
+const {printReport} = require('./report.js')
+
 async function main(){
     if(process.argv.length <3)
     {
@@ -25,8 +27,9 @@ async function main(){
     //pages is an object not an array hence Object.entries
     const pages = await crawlPage(baseURL, baseURL, {})
 
-    for (const page of Object.entries(pages)){
+    /*for (const page of Object.entries(pages)){
         console.log(pages)
-    }
+    }*/
+    printReport(pages)
 }
 main()
