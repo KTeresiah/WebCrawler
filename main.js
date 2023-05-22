@@ -1,5 +1,5 @@
 const {crawlPage} = require('./crawl.js')
-function main(){
+async function main(){
     if(process.argv.length <3)
     {
         console.log("no website provided")
@@ -22,6 +22,11 @@ function main(){
     }
     console.log(`starting crawl of ${baseURL}`)
     console.log(process.argv.length)
-    crawlPage(baseURL)
+    //pages is an object not an array hence Object.entries
+    const pages = await crawlPage(baseURL, baseURL, {})
+
+    for (const page of Object.entries(pages)){
+        console.log(pages)
+    }
 }
 main()
